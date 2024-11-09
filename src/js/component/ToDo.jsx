@@ -42,7 +42,7 @@ export const ToDoList = () => {
                     <input type={"text"} value={toDo} onChange={handleToDo} placeholder="What needs to be done?"/>
                 </form>
                 <ul className="notMarkers">
-                    {listToDo.length > 0 ? listToDo.map((el) => <li className="pt-3 li-box d-flex justify-content-between" key={el.id}>{el.label} <i className="fa-solid fa-trash" onClick={() => deleteToDo(el.id)}></i></li>) : <li className="pt-3">No hay tareas, añadir tareas</li>
+                    {listToDo.length > 0 ? listToDo.map((el) => <li className="pt-3 li-box d-flex justify-content-between" key={el.id}>{el.label} <i className="fa-solid fa-trash" onClick={() => deleteToDo(el.id)}></i></li>) : <li className="pt-3 li-box">No hay tareas, añadir tareas</li>
                     }
                 </ul>
                 <div className="container text-center pt-3">{listToDo.length} items left</div>
